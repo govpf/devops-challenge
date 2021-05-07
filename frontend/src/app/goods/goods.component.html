@@ -1,0 +1,19 @@
+<h2>Here is your list of stuff:
+<mat-list>
+  <mat-list-item *ngFor="let good of goods">
+    <h3 mat-line>
+      {{good.name}}
+      <button class="mat-raised-button" color="primary" [routerLink]="['/good-edit', good.id]">Edit</button>
+      <button class="mat-raised-button" color="primary" (click)="onDelete(good.id)">Delete</button>
+    </h3>
+  </mat-list-item>
+</mat-list>
+</h2>
+
+<h2>
+  <button class="mat-raised-button" color="primary" (click)="onSampleData()">Add sample stuff</button>
+  <button class="mat-raised-button" color="primary" [routerLink]="['/good-create']">Create new stuff</button>
+  <button class="mat-raised-button" color="primary" (click)="onClear()">Clear all goods</button>
+</h2>
+
+<router-outlet></router-outlet>
