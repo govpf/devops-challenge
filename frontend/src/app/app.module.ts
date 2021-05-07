@@ -14,6 +14,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { GoodsComponent } from './goods/goods.component';
 import { GoodEditComponent } from './good-edit/good-edit.component';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,9 @@ import { GoodEditComponent } from './good-edit/good-edit.component';
     MatFormFieldModule,
     MatListModule,
     MatToolbarModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatInputModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
