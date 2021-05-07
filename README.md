@@ -34,7 +34,7 @@ Le fichier de properties est [ici](https://github.com/govpf/devops-challenge/blo
 Une fois démarrée l'API expose les chemins suivants:
 
 | Chemin           | Methodes autorisées           | Description                                                                  |
-|- ----------------|-------------------------------|------------------------------------------------------------------------------|
+|------------------|-------------------------------|------------------------------------------------------------------------------|
 | /goods           | POST, DELETE                  | POST: crée un nouveau objet good, DELETE: supprime tout les objets existants |
 | /goods/[:id]     | PUT, DELETE                   | PUT: met à jour un objet existant, DELETE: supprime l'objet                  |
 | /gen-sample-data | POST                          | POST: Ajoute des données de test                                             |
