@@ -14,7 +14,7 @@ export class GoodsComponent implements OnInit {
 
   ngOnInit(): void {
     this.refreshData();
-    this.interval = setInterval(() => { this.refreshData(); }, 2500);
+    this.interval = setInterval(() => { this.refreshData(); }, 2000);
   }
 
   refreshData(): void  {
