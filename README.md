@@ -57,7 +57,7 @@ Pour construire l'application web, il faut utiliser *yarn*.
 
 ```
 $ cd frontend
-$ yarn install
+$ yarn install --frozen-lockfile
 $ yarn build
 ```
 
