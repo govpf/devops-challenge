@@ -1,10 +1,12 @@
-<mat-card title="{{ good.name }}">
+<mat-card title="{{ good.name }}" fxLayout="column" fxLayoutAlign="left space-around" fxLayoutGap="12px">
 <form [formGroup]="goodForm" (ngSubmit)="onSubmit()">
   <mat-label>Id: {{ good.id }}</mat-label><br>
   <mat-label>Name: </mat-label>
   <input class="matInput" type="text" formControlName="name"><br>
-  <button mat-raised-button color="primary" [routerLink]="['/goods']">Stuff list</button>
-  <button mat-raised-button color="primary" type="submit">Submit</button>
+  <div fxLayout="row" fxLayoutAlign="left space-around" fxLayoutGap="12px">
+    <button mat-raised-button color="primary" [routerLink]="['/goods']">Stuff list</button>
+    <button mat-raised-button color="primary" type="submit">Submit</button>
+  </div>
 </form>
 </mat-card>
 

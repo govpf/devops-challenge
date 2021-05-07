@@ -7,6 +7,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatListModule } from '@angular/material/list';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -14,7 +16,6 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { GoodsComponent } from './goods/goods.component';
 import { GoodEditComponent } from './good-edit/good-edit.component';
-import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { MatInputModule } from '@angular/material/input';
     AppRoutingModule,
     BrowserAnimationsModule,
     BrowserModule,
+    FlexLayoutModule,
     HttpClientModule,
     MatCardModule,
     MatFormFieldModule,
