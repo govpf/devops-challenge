@@ -10,14 +10,14 @@ Voici un schéma d'architecture de l'application.
 
 # API
 ## Construction logicielle
-Pour construire l'application, il faut utiliser *maven*. 
+Pour construire l'application, il faut utiliser *maven 3.6* et le *jdk 8*.
 
 ```
 $ cd api
 $ mvn package
 ```
 
-Cette commande produira un fichier jar qui sera éxécutable via Java. 
+Cette commande produira un fichier jar qui sera éxécutable via Java.
 
 ```
 $ cd api
@@ -53,7 +53,7 @@ curl -XDELETE localhost:8080/goods/19
 
 ## Construction logicielle
 
-Pour construire l'application web, il faut utiliser *yarn*.
+Pour construire l'application web, il faut utiliser *yarn* et *nodejs 10*.
 
 ```
 $ cd frontend
