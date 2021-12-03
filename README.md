@@ -14,7 +14,8 @@ Pour construire l'application, il faut utiliser *maven 3.6* et le *jdk 8*.
 
 ```
 $ cd api
-$ mvn package
+# On désactive les tests pour aller plus vite
+$ mvn package -DskipTests
 ```
 
 Cette commande produira un fichier jar qui sera éxécutable via Java.
