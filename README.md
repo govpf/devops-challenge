@@ -58,7 +58,7 @@ Pour construire l'application web, il faut utiliser *yarn* et *nodejs 10*.
 
 ```
 $ cd frontend
-$ yarn install --frozen-lockfile
+$ yarn install
 $ yarn build
 ```
 
