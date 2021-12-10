@@ -67,11 +67,10 @@ Les fichiers Javascript/HTML/CSS seront générés dans le répertoire *dist*.
 $ cd frontend
 $ ls dist/*
 ```
-
 ## Déploiement
 
-L'application web doit être servie par un serveur web (Apache).
-Afin d'éviter les problèmes de CORS, il est conseillé de se servir d'apache comme proxy pour les connexions frontend -> backend. 
+L'application web doit être servie par un serveur web (Apache). Afin que le routage Angular se fasse correctement, lire cette documentation (https://angular.io/guide/deployment#server-configuration).
+Egalement, afin d'éviter les problèmes de CORS, il est conseillé de se servir d'apache comme proxy pour les connexions frontend -> backend.
 Par exemple, en configurant Apache pour rediriger les requêtes sur '/api' vers le backend. Puis en utilisant cette url dans le frontend.
 
 
